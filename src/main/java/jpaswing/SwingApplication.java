@@ -1,8 +1,11 @@
-package app;
+package jpaswing;
 
+import jpaswing.ui.BookUI;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+
+import java.awt.*;
 
 /**
  * This is the Spring Boot Application class.  This is where we make sure we're NOT running in Headless mode and that
@@ -16,5 +19,6 @@ public class SwingApplication {
                 .headless(false)
                 .web(WebApplicationType.NONE)
                 .run(args);
+
     }
 }

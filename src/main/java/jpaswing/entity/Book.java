@@ -1,4 +1,4 @@
-package app.entity;
+package jpaswing.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Book {
     @Id
+    //AUTO no funciona bien con SQLite porque intenta obtener el valor de una tabla de secuencias para cada tabla
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
